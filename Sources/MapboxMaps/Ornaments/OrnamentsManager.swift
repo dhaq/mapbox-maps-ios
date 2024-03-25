@@ -220,11 +220,11 @@ public final class OrnamentsManager {
         // Activate new constraints
         NSLayoutConstraint.activate(constraints)
 
-        _logoView.isHidden = options.logo.visibility == .hidden
+        _logoView.isHidden = true
         _scaleBarView.isHidden = options.scaleBar.visibility == .hidden
         _compassView.visibility = options.compass.visibility
         _compassView.isHidden = options.compass.visibility == .hidden
-        _attributionButton.isHidden = options.attributionButton.visibility == .hidden
+        _attributionButton.isHidden = true
         _scaleBarView.useMetricUnits = options.scaleBar.useMetricUnits
     }
 
